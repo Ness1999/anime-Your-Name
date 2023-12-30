@@ -1,0 +1,490 @@
+/* EXTERNAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+#navbar {
+    width: 100%;
+    background-color: rgba(25, 83, 99);
+    color: rgb(254, 254, 254);
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    position: sticky;
+}
+
+
+.menu-list {
+    display: flex;
+    justify-content: flex-start;
+    gap: 25px;
+    list-style-type: none;
+}
+
+
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: cursive;
+    font-size: larger;
+}
+
+
+.menu-list li {
+    padding: 15px;
+    list-style: none;
+}
+
+
+.navbar-header img {
+    height: 60px;
+    width: 40px;
+}
+
+
+#navbar li:hover {
+    background-color: rgb(8, 104, 116);
+}
+
+
+
+footer {
+    
+    width: 100%;
+    height: 250px;
+    background-color: rgba(25, 83, 99, 0.752);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+    position: relative;
+    top: 100%;
+}
+
+
+.sag-list {
+    display: flex;
+    gap: 30px;
+}
+
+footer li {
+    list-style: none;
+    margin-top: 15px;
+
+}
+
+
+
+body {
+    background-color: rgba(94, 138, 153, 0.644);
+    height: 180px;
+}
+
+
+/* plot */
+
+.plot {
+    width: 90%;
+    margin: auto;
+    font-size: 13px;
+    font-family: cursive;
+    margin-top: 80px;
+  }
+
+  .plot img {
+    width: 600px;
+    height: 400px;
+  }
+  
+  .row {
+    margin-top: 40px;
+    border: 3px solid rgba(25, 83, 99, 0.752);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 20px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px;
+    gap: 20px;
+  }
+  
+  .text-col {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+  }
+
+
+/* plot */
+
+
+
+/* Characters */
+
+#characters {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 350px;
+    height: 700px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+
+    border: 2px solid rgba(25, 83, 99, 0.752);
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .card:hover {
+    box-shadow: 0 20px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+
+  .container {
+    padding: 2px 16px;
+  }
+
+
+  .card img {
+
+    height: 400px;
+    width: 300px;
+    margin-top: 25PX;
+  }
+
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.card h4 {
+    margin-top: 10px;
+    font-size: large;
+}
+
+.card p {
+    margin-top: 20px;
+    font-family: cursive;
+}
+
+/* CHARACTERS */
+
+
+
+/* Production */
+
+.production {
+border: 3px solid rgba(25, 83, 99, 0.752);
+border-radius: 20px;
+width: 90%;
+margin: auto;
+position: relative;
+font-size: 14px;
+font-family: cursive;
+margin-top: 80px;
+padding: 25px;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+transition: 0.3s;
+}
+
+.production h1 {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.pictures {   
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.pictures img {
+    width: 550px;
+    height: 400px;
+    margin: auto;
+    }
+
+.production .text {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.release {
+    border: 3px solid rgba(25, 83, 99, 0.752);
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+    font-size: 13px;
+    font-family: cursive;
+    margin-top: 30px;
+    padding: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    }
+
+ .release h1 {
+    display: flex;
+    justify-content: center;
+    }
+
+.release .text {
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* Production */
+    
+
+
+/* gallery */
+
+ 
+  .container {
+
+    margin: auto;
+  }
+  
+
+  .mySlides {
+    margin-top: 30px;
+    position: relative;
+
+  }
+  
+  .cursor {
+    cursor: pointer;
+  }
+
+  .mySlides img {
+    width: 900px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  .prev {
+    left: 16px;
+  }
+  
+
+  .next {
+    position: absolute;
+    right: 16px;
+    border-radius: 3px 0 0 3px;
+  }
+  
+
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 105px;
+    height: 90px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .column img {
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+  /* Gallery */
+
+
+
+
+
+  @media (max-width: 1465px) {
+
+    .row {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+ 
+    }
+
+    .plot img {
+      display: flex;
+      margin: auto;
+    }
+
+    .pictures img {
+      width: 350px;
+      height: 250px;
+      margin: auto;
+    }
+
+    .pictures {
+      margin-top: 45px;
+    }
+
+  }
+
+
+
+  @media (max-width: 1160px) {
+    #cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);}
+
+      .row {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+   
+      }
+
+      .plot img {
+        display: flex;
+        margin: auto;
+      }
+      
+      .pictures {
+        margin: auto;
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pictures img {
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+    }
+
+   .mySlides img {
+    width: 600px;
+    height: 400px;
+   } 
+    
+  }
+
+
+
+
+
+
+
+
+
+  @media (max-width: 840px) {
+    #cards {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    #navbar {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      }
+  
+      .menu-list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+  
+  
+      .navbar-header {
+          display: none;
+      }
+  
+      .plot img {
+        width: 400px;
+        height: 300px;
+        display: flex;
+        margin: auto;
+      }
+      
+      .row {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+   
+      }
+  
+      .pictures {
+        margin: auto;
+        margin-top: 10px;
+       display: grid;
+       grid-template-columns: repeat(1, 1fr);
+    }
+  
+  
+    .mySlides img {
+      width: 500px;
+      height: 300px;
+     } 
+  }
+
+
+  @supports (mix-blend-mode: overlay;) {
+    .example {
+      mix-blend-mode: overlay;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
